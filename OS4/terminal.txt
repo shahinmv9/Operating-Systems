@@ -1,0 +1,61 @@
+shahin@shahin-GL503VM:~/Desktop/OS4$ ./coinsnew 
+coins: OOOOOOOOOOXXXXXXXXXX (start - global lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - global lock)
+100 threads x 10000 flips: 105.574 ms
+
+coins: OOOOOOOOOOXXXXXXXXXX (start - iteration lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - table lock)
+100 threads x 10000 flips: 2266.998 ms
+
+coins: OOOOOOOOOOXXXXXXXXXX (start - coin lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - coin lock)
+100 threads x 10000 flips: 12094.878 ms
+
+-------------------------------------------------
+
+shahin@shahin-GL503VM:~/Desktop/OS4$ ./coinsnew -p 100 -n 20000
+coins: OOOOOOOOOOXXXXXXXXXX (start - global lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - global lock)
+100 threads x 20000 flips: 177.009 ms
+
+coins: OOOOOOOOOOXXXXXXXXXX (start - iteration lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - table lock)
+100 threads x 20000 flips: 5108.256 ms
+
+coins: OOOOOOOOOOXXXXXXXXXX (start - coin lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - coin lock)
+100 threads x 20000 flips: 31882.591 ms
+
+-------------------------------------------------
+
+shahin@shahin-GL503VM:~/Desktop/OS4$ ./coinsnew -p 200 -n 10000
+coins: OOOOOOOOOOXXXXXXXXXX (start - global lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - global lock)
+200 threads x 10000 flips: 196.583 ms
+
+coins: OOOOOOOOOOXXXXXXXXXX (start - iteration lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - table lock)
+200 threads x 10000 flips: 5400.496 ms
+
+coins: OOOOOOOOOOXXXXXXXXXX (start - coin lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - coin lock)
+200 threads x 10000 flips: 32219.084 ms
+
+-------------------------------------------------
+
+shahin@shahin-GL503VM:~/Desktop/OS4$ ./coinsnew -p 200 -n 20000
+coins: OOOOOOOOOOXXXXXXXXXX (start - global lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - global lock)
+200 threads x 20000 flips: 255.816 ms
+
+coins: OOOOOOOOOOXXXXXXXXXX (start - iteration lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - table lock)
+200 threads x 20000 flips: 10287.840 ms
+
+coins: OOOOOOOOOOXXXXXXXXXX (start - coin lock)
+coins: OOOOOOOOOOXXXXXXXXXX (end - coin lock)
+200 threads x 20000 flips: 57343.245 ms
+
+
+
+
