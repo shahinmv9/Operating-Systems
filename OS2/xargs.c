@@ -89,6 +89,8 @@ int main(int argc, char** argv) {
     // arguments -n -t
     int value_n = 0;
     int flag_t = 0;
+    int test;
+    int onemoreforgityo;
 
     char c;
     while((c = getopt(argc, argv, "+hn:t")) != -1) {
